@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SA Economic Pulse | South African economy dashboard</title>
+<meta name="description" content="South African economy dashboard: GDP, inflation, jobs, interest rates, the rand, credit and trade. 40,000+ official Stats SA and Reserve Bank series.">
+<meta name="author" content="Preneshen Naicker">
+<meta name="creator" content="Preneshen Naicker">
+<meta name="copyright" content="&copy; 2026 Preneshen Naicker. Apache License 2.0. Data: Statistics South Africa and the South African Reserve Bank.">
+<meta name="application-name" content="SA Economic Pulse">
+<meta name="keywords" content="South Africa, economy, GDP, CPI inflation, unemployment, repo rate, rand, Statistics South Africa, Reserve Bank, economic data, dashboard">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF1E0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://sa-macropulse.n-preneshen.workers.dev/">
+<link rel="author" href="https://github.com/npreneshen">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SA Economic Pulse">
+<meta property="og:title" content="SA Economic Pulse | South African economy dashboard">
+<meta property="og:description" content="South African economy dashboard: GDP, inflation, jobs, interest rates, the rand, credit and trade. 40,000+ official Stats SA and Reserve Bank series.">
+<meta property="og:url" content="https://sa-macropulse.n-preneshen.workers.dev/">
+<meta property="og:locale" content="en_ZA">
+<meta property="og:image" content="https://sa-macropulse.n-preneshen.workers.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SA Economic Pulse: the South African economy in one place - GDP, inflation, jobs, interest rates, the rand, credit and trade.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SA Economic Pulse | South African economy dashboard">
+<meta name="twitter:description" content="South African economy dashboard: GDP, inflation, jobs, interest rates, the rand, credit and trade. 40,000+ official Stats SA and Reserve Bank series.">
+<meta name="twitter:image" content="https://sa-macropulse.n-preneshen.workers.dev/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SA Economic Pulse", "url": "https://sa-macropulse.n-preneshen.workers.dev/", "description": "South African economy dashboard: GDP, inflation, jobs, interest rates, the rand, credit and trade. 40,000+ official Stats SA and Reserve Bank series.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "inLanguage": "en-ZA", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "ZAR"}, "author": {"@type": "Person", "name": "Preneshen Naicker"}, "creator": {"@type": "Person", "name": "Preneshen Naicker"}, "copyrightHolder": {"@type": "Person", "name": "Preneshen Naicker"}, "copyrightYear": 2026, "license": "https://www.apache.org/licenses/LICENSE-2.0", "image": "https://sa-macropulse.n-preneshen.workers.dev/og-image.png", "about": ["South African economy", "GDP", "Consumer price inflation", "Unemployment", "Interest rates", "Exchange rates", "Credit", "Trade", "Public finance"], "keywords": "South Africa, economy, GDP, CPI inflation, unemployment, repo rate, rand, Statistics South Africa, Reserve Bank, economic data, dashboard", "isBasedOn": [{"@type": "Organization", "name": "Statistics South Africa", "url": "https://www.statssa.gov.za"}, {"@type": "Organization", "name": "South African Reserve Bank", "url": "https://www.resbank.co.za"}]}</script>
+<link rel="stylesheet" href="css/app.css?v=142">
+</head>
+<body>
+<header class="app">
+  <div class="hdr-row">
+    <h1 class="hdr-title">SA Economic Pulse</h1>
+    <div class="hdr-sub">Official South African statistics &middot; <span id="hdrStat"></span></div>
+    <div class="spacer"></div>
+    <a class="hdrlink" href="https://sarb.metiscore.space" target="_blank" rel="noopener" title="The dedicated dashboard with the complete Reserve Bank dataset (opens in a new tab)">SARB Data Explorer &#8599;</a>
+    <button id="themeBtn" class="small" title="Colours and graph layout">Theme</button>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+<main id="view"></main>
+<noscript>
+<section style="max-width:760px;margin:24px auto;padding:0 20px;font:15px/1.5 system-ui,sans-serif">
+<h2>South African economic data, in one dashboard</h2>
+<p>SA Economic Pulse brings together more than 40,000 official series from Statistics South Africa and the South African Reserve Bank: GDP and its drivers, consumer and producer inflation, unemployment and wages, interest rates, the rand, bond yields, money and credit, the balance of payments, public finance, mining, manufacturing, retail, property, tourism and company finances.</p>
+<p>It needs JavaScript to draw the charts. Created by Preneshen Naicker. Data &copy; Statistics South Africa and the South African Reserve Bank; this is an independent viewer, not affiliated with or endorsed by either.</p>
+</section>
+</noscript>
+
+<!-- data: one file per publication, loaded as plain scripts so the app also works opened from disk -->
+<script src="data/manifest.js?v=142"></script>
+<script src="data/P2041.js?v=142"></script>
+<script src="data/P3041.2.js?v=142"></script>
+<script src="data/P3043.js?v=142"></script>
+<script src="data/P4141.js?v=142"></script>
+<script src="data/P6242.1.js?v=142"></script>
+<script src="data/P6343.2.js?v=142"></script>
+<script src="data/P6141.2.js?v=142"></script>
+<script src="data/P5041.1.js?v=142"></script>
+<script src="data/P0151.1.js?v=142"></script>
+<script src="data/P0160.js?v=142"></script>
+<script src="data/P6410.js?v=142"></script>
+<script src="data/P0021.js?v=142"></script>
+<script src="data/P0141.js?v=142"></script>
+<script src="data/P0141AP.js?v=142"></script>
+<script src="data/P0142.1.js?v=142"></script>
+<script src="data/P7162.js?v=142"></script>
+<script src="data/P0441.js?v=142"></script>
+<script src="data/P0441A.js?v=142"></script>
+<script src="data/P0441.2.js?v=142"></script>
+<script src="data/P0211.js?v=142"></script>
+<script src="data/P0277.js?v=142"></script>
+<script src="data/P0045.js?v=142"></script>
+<script src="data/P9101.js?v=142"></script>
+<script src="data/P9119.3.js?v=142"></script>
+<script src="data/P9119.4.js?v=142"></script>
+<script src="data/P9121.js?v=142"></script>
+<script src="data/P9102.js?v=142"></script>
+<script src="data/P9103.1.js?v=142"></script>
+<script src="data/P9110.1.js?v=142"></script>
+<script src="data/P9115.js?v=142"></script>
+<script src="data/P6420.js?v=142"></script>
+<script src="data/P0142.7.js?v=142"></script>
+<script src="data/P0043.1.js?v=142"></script>
+<script src="data/P0043.2.js?v=142"></script>
+<script src="data/P0041.js?v=142"></script>
+<script src="data/P0044.js?v=142"></script>
+<script src="data/P1101.js?v=142"></script>
+<script src="data/integration.js?v=142"></script>
+<script src="data/update-status.js?v=142"></script>
+<script src="data/calendar-status.js?v=142"></script>
+<script src="js/zamap.js?v=142"></script>
+<script src="js/kit.js?v=142"></script>
+<script id="feedsIndex" src="data/live/index.js?v=142" async onerror="window.FEEDS_INDEX_FAILED=1"></script>
+<script src="js/appearance.js?v=142"></script>
+<script src="js/feeds-catalog.js?v=142"></script>
+<script src="js/feeds.js?v=142"></script>
+<script src="js/extras.js?v=142"></script>
+<script src="js/economy.js?v=142"></script>
+<script src="js/explorer.js?v=142"></script>
+<script src="js/resources.js?v=142"></script>
+<script src="js/industrials.js?v=142"></script>
+<script src="js/consumer.js?v=142"></script>
+<script src="js/property.js?v=142"></script>
+<script src="js/travel.js?v=142"></script>
+<script src="js/corporate.js?v=142"></script>
+<script src="js/prices.js?v=142"></script>
+<script src="js/markets.js?v=142"></script>
+<script src="js/pulsechart.js?v=142"></script>
+<script src="js/pulse.js?v=142"></script>
+<script src="js/datatab.js?v=142"></script>
+<script src="js/app.js?v=142"></script>
+</body>
+</html>

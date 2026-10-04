@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------------------
+# Deployment and hosting: kept private, never pushed
+# ---------------------------------------------------------------------------
+DEPLOY.md
+wrangler.toml
+worker/
+dist/
+.wrangler/
+tools/Deploy-*.ps1
+tools/deploy-config.json
+.dev.vars
+.env
+.env.*
+
+# ---------------------------------------------------------------------------
+# Private working notes, reports and guides
+# ---------------------------------------------------------------------------
+APP_NOTES.md
+APP_DESIGN.md
+LIVE_FEEDS.md
+SCOPING_REPORT.md
+CPI_PPI_PARITY.md
+INTEGRATION_STATUS.md
+ACCURACY_REPORT.md
+GIT_PUSH.md
+scoping/
+.claude/
+
+# One-off exploration helpers (not part of the update pipeline)
+tools/Probe-Macro.ps1
+tools/scrape-schedule.js.txt
+tools/optional/
+
+# ---------------------------------------------------------------------------
+# Raw downloads, rollback copies and this PC's updater state
+# (the updater creates and refreshes these; the parsed data in data/ is what the app uses)
+# ---------------------------------------------------------------------------
+source-data/
+backups/
+_override/
+data/update-log.txt
+data/update-state.json
+data/update-status.json
+data/calendar-state.json
+
+# ---------------------------------------------------------------------------
+# Scratch and operating-system files
+# ---------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.tmp
+*.log
+*.zip
+Thumbs.db
+desktop.ini
+.DS_Store

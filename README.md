@@ -1,5 +1,7 @@
 # SA Economic Pulse
 
+[SA Economic Pulse Dashboard](https://za-macro.metiscore.space/)
+
 An interactive dashboard of the **South African economy**: GDP and what drives it, inflation,
 jobs and wages, interest rates, the rand, credit, trade, public finance, mining, manufacturing,
 retail, property, tourism and company finances. More than **40,000 official series** from
@@ -7,7 +9,7 @@ retail, property, tourism and company finances. More than **40,000 official seri
 date. Companion project to the [SARB Data Explorer](https://sarb.metiscore.space) and the [SA CPI & PPI Dashboard](https://sacpi.metiscore.space/)
 
 **Live on the web: https://za-macro.metiscore.space/**
->Note that future changes to the Live might not be synced to this repo
+>Note that future changes to the live version might not be synced to this repo
 
 ![The Pulse overview: the key indicators of every theme as colour-coded tiles](docs/pulse-overview.png)
 *Pulse overview: the four key indicators of each theme, coloured by the size and direction of the latest move.*
